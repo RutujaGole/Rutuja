@@ -1,0 +1,21 @@
+R=np.array([[2.,2,4],[1,1,2]])
+
+x=np.array([1,2,6])
+y=np.array([-1,1])
+
+def varz(R):
+    Px=sum(P,axis=0)
+    Py=sum(P,axis=1)
+
+    Ex = 0
+    for i in range(3):
+        Ex+=Px[i]*x[i]
+    Ey = 0
+    for i in range(2):
+        Ey+=Py[i]*y[i]
+
+    varx = 0
+    for i in range(3):
+        varx+=Px[i]*(x[i] - Ex)**2
+    stdx = sqrt(varx)
+

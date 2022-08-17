@@ -18,4 +18,9 @@ def varz(R):
     for i in range(3):
         varx+=Px[i]*(x[i] - Ex)**2
     stdx = sqrt(varx)
+    vary = 0
+    for i in range(2):
+        vary+=Py[i]*(y[i] - Ey)**2
+    stdy = sqrt(vary)
 
+    return(vary, varx, stdx, stdy)

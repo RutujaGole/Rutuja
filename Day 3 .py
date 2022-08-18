@@ -148,8 +148,8 @@ plt.legend()
 
 
 age1 = np.random.normal([60, 50, 22])
-salary2 = np.random.normal([4000, 5000, 6000])
-salary3 = np.random.normal([7000, 8000, 9000])
+salary2 = np.random.normal([4000, 3000, 6000])
+salary3 = np.random.normal([7000, 4000, 9000])
 
 age1.sort()
 salary2.sort()

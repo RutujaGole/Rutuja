@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+
+y = random.normal(loc = 2, scale = 5, size = (6,7))
+y
+
+m1 = np.mean(y)
+m2 = np.median(y)
+m3 = np.median(y)
+print(m1, m2, m3)
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.distplot(random.normal(size=(42)))
+plt.show()
+df = pd.DataFrame(y)
+
+df.to_csv(index=False)
+z = pd.DataFrame(y).to_csv("Normal Gaussian")
+
+pd.read_csv("Normal Gaussian")
